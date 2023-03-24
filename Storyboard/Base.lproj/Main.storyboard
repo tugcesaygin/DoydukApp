@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JZJ-UK-yXl">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="DoydukApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-mY-dgq">
+                                <rect key="frame" x="140.66666666666666" y="357" width="112" height="138"/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.29803921568627451" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.29803921568627451" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wBa-mY-dgq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZbP-xl-yIi"/>
+                            <constraint firstItem="wBa-mY-dgq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tps-dL-34f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ELi-uZ-N7Y"/>
+                    <connections>
+                        <segue destination="Dew-JQ-sAX" kind="show" identifier="splashToLoginIdentifier" id="KyO-Pj-8KC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="4"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Xr3-QM-pEE">
+            <objects>
+                <viewController id="Dew-JQ-sAX" customClass="LoginViewController" customModule="DoydukApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R1l-4e-LM8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="pcQ-Is-jD6">
+                                <rect key="frame" x="140.66666666666666" y="123" width="112" height="138"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lütfen İzminizi Girin" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2Uy-LY-tLY">
+                                <rect key="frame" x="20" y="291" width="353" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.80784313725490198" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Desk Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jea-Rt-Kvj">
+                                <rect key="frame" x="20" y="353" width="353" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.80784313725490198" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLY-E8-wjw">
+                                <rect key="frame" x="20" y="409" width="353" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.45098039220000002" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GİRİŞ">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionLoginButton:" destination="Dew-JQ-sAX" eventType="touchUpInside" id="6hH-iX-KCv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YZ7-tb-kha"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LLY-E8-wjw" firstAttribute="trailing" secondItem="jea-Rt-Kvj" secondAttribute="trailing" id="2r1-Dh-j2Z"/>
+                            <constraint firstItem="pcQ-Is-jD6" firstAttribute="centerX" secondItem="YZ7-tb-kha" secondAttribute="centerX" id="6Ip-ZC-EkF"/>
+                            <constraint firstItem="pcQ-Is-jD6" firstAttribute="top" secondItem="YZ7-tb-kha" secondAttribute="top" constant="20" id="AeV-Kg-ZLf"/>
+                            <constraint firstItem="2Uy-LY-tLY" firstAttribute="leading" secondItem="YZ7-tb-kha" secondAttribute="leading" constant="20" id="CFc-qq-qQu"/>
+                            <constraint firstItem="YZ7-tb-kha" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LLY-E8-wjw" secondAttribute="trailing" symbolic="YES" id="GE3-Sy-5Fe"/>
+                            <constraint firstItem="jea-Rt-Kvj" firstAttribute="leading" secondItem="2Uy-LY-tLY" secondAttribute="leading" id="ICl-Yt-Rb9"/>
+                            <constraint firstItem="YZ7-tb-kha" firstAttribute="trailing" secondItem="2Uy-LY-tLY" secondAttribute="trailing" constant="20" id="N6z-fk-ydK"/>
+                            <constraint firstItem="LLY-E8-wjw" firstAttribute="leading" secondItem="jea-Rt-Kvj" secondAttribute="leading" id="gRA-MN-4oY"/>
+                            <constraint firstItem="2Uy-LY-tLY" firstAttribute="top" secondItem="pcQ-Is-jD6" secondAttribute="bottom" constant="30" id="ha6-vU-HQ4"/>
+                            <constraint firstItem="LLY-E8-wjw" firstAttribute="top" secondItem="jea-Rt-Kvj" secondAttribute="bottom" constant="22" id="hba-ah-Gyo"/>
+                            <constraint firstItem="jea-Rt-Kvj" firstAttribute="top" secondItem="2Uy-LY-tLY" secondAttribute="bottom" constant="28" id="xDQ-Mi-kQF"/>
+                            <constraint firstItem="jea-Rt-Kvj" firstAttribute="trailing" secondItem="2Uy-LY-tLY" secondAttribute="trailing" id="zQR-Cd-ZAt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oJq-ez-W0P"/>
+                    <connections>
+                        <outlet property="fullNameTextField" destination="2Uy-LY-tLY" id="wHo-d5-7FW"/>
+                        <outlet property="loginButton" destination="LLY-E8-wjw" id="zEd-ez-d6I"/>
+                        <outlet property="tableNoTextField" destination="jea-Rt-Kvj" id="eGg-PZ-zgJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMR-NB-IMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782.4427480916029" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1N8-4S-qQh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JZJ-UK-yXl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rED-VG-Tg1">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0GQ-c8-nXE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LNC-hC-fD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_logo" width="112" height="138"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
