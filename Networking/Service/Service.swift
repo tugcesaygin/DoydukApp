@@ -25,4 +25,26 @@ struct Service {
             }
         }.resume()
     }
+    
+    
+    func getProducts(completion: @escaping (_ response : ProductResponse) -> Void) {
+        let endpointUrl : URL = URL(string: "https://159.223.0.153/dishes")!
+        let urlSession: URLSession = URLSession.shared
+        let urlRequest : URLRequest = URLRequest(url: endpointUrl)
+        
+        
+        
+        urlSession.dataTask(with: urlRequest) { data, uRLResponse, error in
+        
+            let decoder = JSONDecoder()
+            do{
+                let response = try decoder.decode(ProductResponse.self,from: data!)
+                completion(response)
+            }
+            catch{
+                print(error)
+            }
+        }.resume()
+    }
+    
 }
